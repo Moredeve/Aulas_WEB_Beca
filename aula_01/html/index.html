@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Página web</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+    <center>
+    <h1><br>Estoque<br><br></h1>
+
+    <div class="form-group col-md-3 rounded" >
+        <label>Produto</label>
+        <input type="text" id="produto" list="lista_produtos" class="form-control">
+            <datalist id="lista_produtos">
+                <option value="id=5">Capacitor</option>
+                <option value="Cadeira">Cadeira</option>
+                <option value="Chapéu">Chapéu</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="PCB">PCB</option>
+                <option value="Resistor">Resistor</option>
+            </datalist>
+        <br>
+    </div>
+
+    <div class="form-group col-md-3 rounded">
+        <label>Qnt.</label>
+        <input id="quantidade" type="number" class="form-control"> 
+        <br>
+    </div>
+
+    <div class="form-group col-md-3 rounded">
+        <label>Preço</label>
+        <input id="preço" class="form-control">
+        <br>
+    </div>
+
+    <button class="btn btn-primary">Salvar!</button>
+ 
+    </center>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+</body>
+</html>
