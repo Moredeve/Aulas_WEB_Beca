@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Lemonada:wght@400;500&family=Lexend+Zetta:wght@100&display=swap');
+
+h1{
+    font-family: Jura;
+    font-size: 5vh;
+    margin-left: 2vw;
+}
+
+h2{
+    font-family: Lexend Zetta;
+}
+
+.mp-2{
+    margin-top:  -2%;  
+    font-family: Lemonada;
+    color: #f7a08b;
+    font-size: 2vh;
+    margin-left: 8vw;  
+}
+
+.img-header{
+    margin-left: 10vw;
+    height: 9vh;
+}
