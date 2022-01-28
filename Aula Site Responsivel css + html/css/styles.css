@@ -1,6 +1,8 @@
+/* GOOGLE Fonts Imports*/
 @import url(https://fonts.googleapis.com/css?family=Nokora:100,300,regular,700,900);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic);
 
+/* CSS Reset*/
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +18,6 @@ a {text-decoration: none;}
 ul {list-style: none;}
 img {max-width: 100%;}
 p {margin: 5%;}
-strong {font-weight:bold;}
 
 /* Header */
 
@@ -25,7 +26,9 @@ strong {font-weight:bold;}
     float:left;
     padding: 1% 8%;
     background-color: #f6c8d2; 
-    height: 10%;
+    height: 7%;
+    position: fixed;
+    z-index: 9;
 }
 
 .logo {
@@ -45,15 +48,57 @@ strong {font-weight:bold;}
     color: white;
     border-radius: 56px;
     cursor: pointer;
-    background: #f6c8d2;
     font-size: 150%;
+    background-color: transparent;
 }
 
-/* Section Baixar App */
+.menu {
+    display: none;
+    width: 100%;
+    height: 40%;
+    box-shadow: 8px 8px 8px #f7a7b8; 
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    color: #f7a7b8;  
+    top: 0;
+    left: 3%;
+    border-radius: 40px 0px 40px 40px;
+    z-index: 9;
+}
+
+.menu ul {
+    width: 100%;
+    float:  left;
+    padding-top: 10%;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.menu li{
+    padding: 3%;
+    font-size: 200%
+}
+
+.menu li:hover{
+    background-color: #f7a7b8;
+    color: white; 
+}
+
+.btn-close {
+    font-size: 250%;
+    color: #f7a7b8;
+    float: right;
+    padding-right: 10%;
+    padding-top: 5%;
+    cursor: pointer;
+}
+
+/* Baixar App Section */
 
 .baixar-app {
     position: relative;
     top: 0;
+    padding-top: 15%;
     left: 0;
 }
 
@@ -67,25 +112,10 @@ strong {font-weight:bold;}
    top: 70%;
 }
 
-.wpp-button {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:10px;
-    right:15px;
-    background-color:#f6c8d2;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:50px;
-    box-shadow: 1px 1px 2px #888;
-    z-index:1000;
-}
-
+/* Quem Somos Section */
 .img-container {
     display: none;
 }
-
 
 .quem-somos {
     padding-left: 5%;
@@ -109,6 +139,7 @@ strong {font-weight:bold;}
     color:white;
  }
 
+ /* Como funciona Section*/
  .como-funciona{
     padding-left: 5%;
     padding-right: 10%;
@@ -133,9 +164,10 @@ strong {font-weight:bold;}
      line-height: 0.2;
      padding-top: 2%;
      padding-bottom: 1%;
-    color: #ff8370cc
+     color: #ff8370cc
  }
 
+ /* Beca Corporativo Section*/
  .beca-corporativo {
     padding-left: 5%;
     padding-right: 10%;
@@ -159,3 +191,20 @@ strong {font-weight:bold;}
      border-radius: 10px 40px 40px 30px;
      background-color: #f8abbc !important;
  }
+
+/*Botão Whatsapp*/
+
+ .wpp-button {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:10px;
+    right:15px;
+    background-color:#f6c8d2;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:50px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
