@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+    <!-- CDN -->
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <!-- CSS Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- JavaScript Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Fonte de Ícones Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+            
+  </head>
+  <body>
+    <center>
+      <h1>Calculadora</h1>
+    <!-- 12 Colunas com o sistema de Grid Materialize -->
+    <div class="row">
+      <!-- Input Numero -->
+      <div class="offset-s3 input-field col s3">
+        <input id="number" type="number" class="validate">
+        <label class="active">N1</label>
+      </div>
+      <!-- Input Numero 2 -->
+      <div class="input-field col s3">
+        <input id="number2" type="number" class="validate">
+        <label class="active">N2</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset-s6 col s3">
+        <!-- Botão de Submit -->
+        <button class="btn waves-effect waves-light" type="submit" 
+        name="action" id="calcular">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+    </center>
+
+
+  <script>
+    /* 
+      Colocamos nosso javascript aqui dentro
+      Na parte do cliente, utilizamos o console.log
+      Na parte do servidor, nós usamos o Logger.log 
+    */
+
+    const soma = (n1, n2) => {
+      return parseFloat(n1) + parseFloat(n2)
+    }
+
+    const subtracao = (n1, n2) => {
+      return parseFloat(n1) - parseFloat(n2)
+    }
+
+    const multiplicacao = (n1, n2) => {
+      return parseFloat(n1) * parseFloat(n2)
+    }
+
+    const divisao = (n1, n2) => {
+      return parseFloat(n1) / parseFloat(n2)
+    }
+
+
+    const calculadora = event => {
+      // Essa parte pega os valores do html
+      var n1 = $("#number").val()
+      var n2 = $("#number2").val()
+
+      // Nós chamaremos as funções de cada operação matemática
+      console.log(soma(n1, n2))
+      console.log(subtracao(n1, n2))
+      console.log(multiplicacao(n1, n2))
+      console.log(divisao(n1, n2))
+    }
+
+    $("#calcular").click(calculadora);
+
+  </script>
+  </body>
+</html>
